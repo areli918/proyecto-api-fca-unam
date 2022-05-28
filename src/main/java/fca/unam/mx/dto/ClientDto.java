@@ -7,7 +7,7 @@ public class ClientDto {
     private String name;
     private String last_name;
     private String second_last_name;
-    private String rfc;
+    private String RFC;
 
     public Long getId() {
         return id;
@@ -26,7 +26,7 @@ public class ClientDto {
         this.name = name;
     }
 
-    @ColumnName("last_name")
+    @ColumnName("apellido_paterno")
     public String getLast_name() {
         return last_name;
     }
@@ -35,26 +35,24 @@ public class ClientDto {
         this.last_name = last_name;
     }
 
-    @ColumnName("second_last_name")
+    @ColumnName("apellido_materno")
     public String getSecond_last_name() {
-        return this.second_last_name;
+        return second_last_name;
     }
 
     public void setSecond_last_name(String second_last_name) {
         this.second_last_name = second_last_name;
     }
 
-    @ColumnName("rfc")
-    public String getRfc() {
-        return rfc;
+    @ColumnName("RFC")
+     public String getRFC() {
+        return RFC;
     }
 
-    public void setRfc(String rfc) {
-        this.rfc = rfc;
+    public void setRFC(String RFC) {
+        this.RFC = RFC;
     }
 
     
-
-   
 
 }
